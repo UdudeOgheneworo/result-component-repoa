@@ -1,0 +1,128 @@
+@import url("https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  width: 100%;
+  min-height: 100vh;
+  font-family: "Hanken Grotesk", sans-serif;
+}
+main {
+  width: 100%;
+  margin: auto;
+}
+.number,
+h1 {
+  color: white;
+}
+.number {
+  font-size: 2.2rem;
+  font-weight: 800;
+}
+main,
+.blue,
+.score,
+.white {
+  display: flex;
+  flex-direction: column;
+}
+section {
+  width: 100%;
+  padding: 1.2rem;
+}
+.blue {
+  align-items: center;
+  justify-content: space-around;
+  aspect-ratio: 1/0.8;
+  border-radius: 0 0 2rem 2rem;
+  text-align: center;
+  background: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+  color: hsl(241, 100%, 89%);
+}
+.blue > p {
+  font-weight: 500;
+}
+.total {
+  font-weight: 700;
+}
+.score {
+  align-items: center;
+  justify-content: center;
+  height: 35%;
+  aspect-ratio: 1/1;
+  border-radius: 50%;
+  background: linear-gradient(hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0));
+  padding: 1rem;
+}
+.white {
+  justify-content: space-between;
+  font-weight: 700;
+  color: hsl(224, 30%, 27%);
+}
+.bars {
+  display: flex;
+  background: rgba(255, 0, 0, 0.226);
+  padding: 0.8rem;
+  border-radius: 1.5rem;
+  margin: 0.5rem 0;
+}
+.bars > img {
+  margin-right: 5px;
+}
+.bars:nth-of-type(1) {
+  color: hsla(0, 100%, 67%);
+  background-color: hsla(0, 100%, 67%, 0.1);
+}
+.bars:nth-of-type(2) {
+  color: hsla(39, 100%, 56%);
+  background: hsla(39, 100%, 56%, 0.1);
+}
+.bars:nth-of-type(3) {
+  color: hsl(166, 100%, 37%);
+  background: hsl(166, 100%, 37%, 0.1);
+}
+.bars:nth-of-type(4) {
+  color: hsl(234, 85%, 45%);
+  background: hsl(234, 85%, 45%, 0.1);
+}
+
+.value {
+  margin-left: auto;
+  color: hsl(224, 30%, 27%);
+}
+.value > span {
+  color: rgb(200, 199, 255);
+}
+button {
+  margin: 0.5rem 0;
+  padding: 0.8rem;
+  border-radius: 1.5rem;
+  background-color: hsl(224, 30%, 27%);
+  outline: none;
+  border: none;
+  color: white;
+  font-weight: 700;
+}
+button:hover {
+  background: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+}
+@media (min-width: 600px) {
+  body {
+    display: flex;
+    align-items: center;
+  }
+  main {
+    flex-direction: row;
+    max-width: fit-content;
+    border-radius: 2rem;
+    box-shadow: 3px 4px 15px 0px rgba(200, 199, 255, 0.89);
+  }
+  .blue {
+    border-radius: 2rem;
+  }
+  section {
+    aspect-ratio: 1/1.2;
+  }
+}
